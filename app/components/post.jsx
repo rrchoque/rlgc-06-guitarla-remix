@@ -13,7 +13,6 @@ export default function Post({post}) {
         <p className="resumen">{contenido}</p>
         <Link className="enlace" to={`/post/${url}`}>Leer Post</Link>
       </div>
-
     </article>
   )
 }
