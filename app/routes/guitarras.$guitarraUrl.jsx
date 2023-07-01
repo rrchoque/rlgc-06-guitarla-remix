@@ -4,8 +4,6 @@ import styles from '~/styles/guitarras.css'
 
 export function meta({data}) {
 
-  console.log('DATA ::: ', data)
-
   if (!data) {
     return [
       { title: `GuitarLA - Guitarra No Encontrada` },

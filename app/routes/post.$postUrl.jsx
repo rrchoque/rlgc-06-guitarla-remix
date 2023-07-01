@@ -5,8 +5,6 @@ import styles from '~/styles/blog.css'
 
 export function meta({data}) {
 
-  console.log('DATA ::: ', data)
-
   if (!data) {
     return [
       { title: `GuitarLA - Entrada No Encontrada` },
@@ -32,7 +30,6 @@ export function links() {
 
 export async function loader({params}) {
     const {postUrl} = params
-    console.log(postUrl)
     const post  = await getPost(postUrl)
 
     if (post.data.length === 0) {
@@ -49,7 +46,6 @@ export default function Post() {
   
   const post = useLoaderData()
   const {contenido, titulo, imagen, url, publishedAt} =  post
-  console.log(post)
 
   return (
     <article className="contenedor post mt-3">
