@@ -29,6 +29,7 @@ export function links() {
     }
   ]
 }
+
 export async function loader({params}) {
     const {postUrl} = params
     console.log(postUrl)
@@ -43,7 +44,6 @@ export async function loader({params}) {
   
     return post.data[0].attributes
 }
-
 
 export default function Post() {
   
