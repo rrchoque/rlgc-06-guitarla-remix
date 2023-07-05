@@ -58,7 +58,6 @@ function Guitarra() {
     }
 
     agregarCarrito(guitarraSeleccionada)
-    console.log(guitarraSeleccionada)
   }
 
   return (
