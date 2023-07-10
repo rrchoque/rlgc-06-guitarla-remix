@@ -25,7 +25,7 @@ function Navegacion() {
             >Blog</Link>
             <Link
                 to="/carrito"
-                className={location.pathname === '/blog' ? 'active' : '' }
+                className={location.pathname === '/carrito' ? 'active' : '' }
             >
                 <img src={imagen} alt="carrito de compras" />
             </Link>
